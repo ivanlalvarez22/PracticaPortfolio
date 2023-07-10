@@ -1,0 +1,143 @@
+:root {
+	--color-primary: rgb(0, 0, 0);
+	--color-secondary: rgb(255, 255, 255);
+}
+
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('../img/background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+#header {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.541);
+}
+
+#contentLogo {
+	width: 40%;
+	height: 100%;
+
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contentLogo img {
+	width: auto;
+	height: 100%;
+}
+#contentNav {
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+#nav {
+	width: 100%;
+	height: auto;
+
+	padding: 10px;
+	margin-top: 3%;
+}
+
+#nav ul {
+	width: 90%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	list-style: none;
+}
+#nav ul li {
+	background: white;
+	border-radius: 5px;
+	padding: 9px;
+}
+#nav ul li:hover {
+	border-radius: 2px;
+	background: rebeccapurple;
+	transition: all 300ms;
+}
+
+#nav ul li a {
+	text-decoration: none;
+	color: var(--color-primary);
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+#nav ul li a:hover {
+	color: var(--color-secondary);
+}
+
+#main {
+	width: 100%;
+	height: auto;
+}
+
+#about {
+	width: 100%;
+	height: auto;
+	margin-top: 5%;
+	padding: 20px;
+	background-color: white;
+}
+
+/*Button*/
+
+.shadow__btn {
+	padding: 10px 20px;
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	border-radius: 7px;
+	letter-spacing: 4px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.5s;
+	transition-property: box-shadow;
+    cursor: pointer;
+}
+
+.shadow__btn {
+	background: rgb(3, 105, 189);
+	box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+	box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+		0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+#footer {
+	width: 100%;
+	height: 100px;
+}
